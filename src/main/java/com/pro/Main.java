@@ -15,10 +15,11 @@ public class Main {
 
         boolean isValid = validator.validatePolicyResource(rootNode);
         if (isValid) {
-            System.out.println("Pole 'Resource' nie zawiera pojedynczej gwiazdki.");
+            System.out.println("The 'Resource' field does not contain a single asterisk.");
         } else {
-            System.out.println("Pole 'Resource' zawiera pojedynczą gwiazdkę.");
+            System.out.println("The 'Resource' field does contain a single asterisk.");
         }
 
+
     }
-    }
+}
