@@ -32,7 +32,7 @@
     public void example() throws IOException, PolicyFormatException {
         IAMPolicyValidator validator = new IAMPolicyValidator();
         ObjectMapper mapper = new ObjectMapper();
-        JsonNode rootNode = mapper.readTree(new File("src\\main\\resources\\package.json"));
+        JsonNode rootNode = mapper.readTree(new File("path\\to\\the\\file.json")); // provide the path to the selected json file
 
         boolean isValid = validator.validatePolicyResource(rootNode);
         if (isValid) {
